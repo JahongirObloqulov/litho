@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*font-family: 'Poppins', sans-serif;*/
+body {
+    background-color: #23262d;
+    font-family: 'Roboto', sans-serif;
+    color: #fff
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 90px;
+}
+
+#header {
+    padding-top: 30px;
+}
+
+.header-nav {
+    padding: 10px 0;
+}
+
+.header-nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#check {
+    display: none;
+}
+
+.header-nav__item:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 25px;
+}
+
+.header-nav__item img {
+    width: 111px;
+}
+
+.header-nav__item a {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+
+
+label #open {
+    position: absolute;
+    font-size: 20px;
+    top: 48px;
+}
+
+label #close {
+    display: none;
+    position: absolute;
+    font-size: 20px;
+    transition: .5s;
+    top: 48px;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 60%;
+    display: flex;
+    height: 100vh;
+    line-height: 40px;
+    z-index: 100;
+    background-color: #23262d;
+    transition: .5s;
+}
+
+.link {
+    width: 50%;
+    padding: 77px;
+}
+
+#check:checked~label #close {
+    display: block;
+    z-index: 101;
+}
+
+#check:checked~label #open {
+    display: none;
+    transition: .5s;
+}
+
+#check:checked~.menu {
+    right: 0;
+}
+
+.menu-bg {
+    width: 50%;
+    background-image: url("../img/architecture-menu-img.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.link-item1 li a {
+    color: rgb(255, 255, 255, 0.5);
+    font-size: 44px;
+    line-height: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.link-item1>li:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.link-item1 {
+    margin-bottom: 130px;
+}
+
+.link-item2 li a {
+    color: rgb(255, 255, 255, 0.5);
+    font-size: 13px;
+    line-height: 22px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.link-item2 li {
+    width: 100%;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.5);
+}
+
+.fa-brands {
+    color: rgb(255, 255, 255, 0.5);
+    padding-right: 15px;
+}
