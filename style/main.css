@@ -18,6 +18,7 @@ body {
 
 #header {
     padding-top: 30px;
+    margin-bottom: 20px;
 }
 
 .header-nav {
@@ -170,4 +171,9 @@ label #close {
 .fa-brands {
     color: rgb(255, 255, 255, 0.5);
     padding-right: 15px;
+}
+
+.projects {
+    position: relative;
+
 }
