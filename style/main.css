@@ -534,6 +534,7 @@ label #close {
 
 .portfolio-card {
     position: relative;
+    overflow: hidden;
 }
 
 .card-title {
@@ -550,7 +551,7 @@ label #close {
     position: absolute;
     width: 270px;
     bottom: 65px;
-    left: 75px;
+    left: 55px;
     opacity: 0;
     transition: .5s all;
 }
@@ -564,6 +565,10 @@ label #close {
 }
 
 .portfolio-info a {
+    color: #cee002;
+}
+
+.portfolio-info .fa-solid {
     color: #cee002;
 }
 
@@ -585,23 +590,36 @@ label #close {
     background: white;
     color: black;
     border-radius: 50%;
+    transition: 1s;
 }
 
 .portfolio-card:hover .card-img {
     transition: 0.5s;
-    width: 110%;
+    width: 100%;
     opacity: 0.3;
+    transform: scale(1.1);
 }
 
 .portfolio-card:hover .more-info {
     display: none;
-    transition: 1s;
 }
 
 .portfolio-card:hover .portfolio-info {
     opacity: 1;
 }
 
-.portfolio-card:hover .card-img {
-    scale: 1.5;
+@media only screen and (max-width:992px) {
+    .portfolio {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 100px 30px;
+    }
+}
+
+
+
+@media only screen and (max-width:768px) {
+    .portfolio {
+        grid-template-columns: 1fr;
+        padding: 100px 15px;
+    }
 }
