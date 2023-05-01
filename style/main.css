@@ -521,3 +521,87 @@ label #close {
         padding: 50px 25px 60px 25px;
     }
 }
+
+/* Portfolio section */
+
+
+.portfolio {
+    display: grid;
+    padding: 50px 0;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.portfolio-card {
+    position: relative;
+}
+
+.card-title {
+    position: absolute;
+    top: 65px;
+    left: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 35px;
+}
+
+.portfolio-info {
+    position: absolute;
+    width: 270px;
+    bottom: 65px;
+    left: 75px;
+    opacity: 0;
+    transition: .5s all;
+}
+
+.portfolio-info p {
+    margin-bottom: 50px;
+    margin-top: 150px;
+    font-size: 15px;
+    line-height: 30px;
+    color: #828282;
+}
+
+.portfolio-info a {
+    color: #cee002;
+}
+
+.card-img {
+    width: 100%;
+    background: #000000;
+}
+
+.more-info {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 60px;
+    left: 56px;
+}
+
+.more-info i {
+    padding: 20px;
+    background: white;
+    color: black;
+    border-radius: 50%;
+}
+
+.portfolio-card:hover .card-img {
+    transition: 0.5s;
+    width: 110%;
+    opacity: 0.3;
+}
+
+.portfolio-card:hover .more-info {
+    display: none;
+    transition: 1s;
+}
+
+.portfolio-card:hover .portfolio-info {
+    opacity: 1;
+}
+
+.portfolio-card:hover .card-img {
+    scale: 1.5;
+}
