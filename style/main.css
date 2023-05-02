@@ -733,6 +733,8 @@ label #close {
     }
 }
 
+
+/* Video section */
 .video {
     position: relative;
     height: 600px;
@@ -770,7 +772,7 @@ label #close {
     bottom: 0;
     right: 0;
     display: inline-block;
-    padding: 77px 91px 0;
+    padding: 77px 91px 8px;
     background-color: #23262D;
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
@@ -808,5 +810,36 @@ label #close {
         top: 180px;
         left: 155px;
 
+    }
+}
+
+/* Partners section */
+.partners {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 0;
+}
+
+.partners a img {
+    opacity: 0.6;
+    transition-duration: 0.3s;
+}
+
+.partners a img:hover {
+    opacity: 1;
+}
+
+@media only screen and (max-width:992px) {
+    .partners {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .partners {
+        grid-template-columns: 1fr;
     }
 }
