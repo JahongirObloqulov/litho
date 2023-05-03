@@ -1210,6 +1210,11 @@ label #close {
     border-bottom: 1px solid #cee002;
 }
 
+.bottom-text a:hover {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
 @media only screen and (max-width:992px) {
     .blog-card {
         grid-template-columns: repeat(2, 1fr);
@@ -1231,10 +1236,75 @@ label #close {
     }
 }
 
+/* Footer */
 .footer {
     padding: 65px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid #FFFFFF1A;
+}
+
+.addres-list {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #828282;
+}
+
+.addres-list span {
+    margin: 0 10px;
+}
+
+.addres-list a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #828282;
+}
+
+.addres-list a:hover {
+    color: #cee002;
+}
+
+.social-list {
+    display: flex;
+    align-items: center;
+}
+
+.social-list a i {
+    color: #fff;
+}
+
+.social-list a i:hover {
+    color: #828282;
+}
+
+@media only screen and (max-width:992px) {
+    .addres-list {
+        text-align: center;
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .addres-list {
+        text-align: center;
+        padding: 30px 0;
+    }
+
+
+    .addres-list li:nth-child(1) {
+        width: 40%;
+    }
+
+    .addres-list li:nth-child(2) {
+        width: 50%;
+    }
+
 }
