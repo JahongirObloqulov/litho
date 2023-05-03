@@ -8,7 +8,8 @@
 body {
     background-color: #23262d;
     font-family: 'Roboto', sans-serif;
-    color: #fff
+    color: #fff;
+    overflow-x: hidden;
 }
 
 .container {
@@ -974,9 +975,17 @@ label #close {
         height: 100%;
 
     }
+
+    .work-text {
+        top: 115px;
+        left: 42%;
+    }
 }
 
 @media only screen and (max-width:768px) {
+    .work {
+        padding: 130px 0;
+    }
 
     .work-design {
         grid-template-columns: 1fr;
@@ -1113,11 +1122,119 @@ label #close {
     color: #cee002;
 }
 
+.blog-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-content: center;
+    column-gap: 30px;
+}
 
-@media only screen and (max-width:992px) {}
+.blog-card__item {
+    position: relative;
+    height: 408px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    overflow: hidden;
+    background: linear-gradient(to bottom rgb(0, 0, 0, 0.8));
+
+}
+
+
+
+.blog-card__item img {
+    width: 100%;
+    transition: 0.5s;
+    background: linear-gradient(to bottom rgb(0, 0, 0, 0.8));
+}
+
+.blog-card__item:hover .blog-card__item img {
+    transition: 0.5s;
+    width: 100%;
+    opacity: 0.3;
+    transform: scale(1.1);
+}
+
+.blog-card__content {
+    position: absolute;
+    top: 0;
+    padding: 49px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-card__btn {
+    width: 100%;
+    margin-bottom: auto;
+}
+
+.blog-card__btn a {
+    font-size: 12px;
+    line-height: 14px;
+    background-color: rgba(23, 23, 23, .75);
+    color: #fff;
+    border-radius: 2px;
+    padding: 5px 13px;
+}
+
+.blog-card__item:hover .blog-card__btn a {
+    background-color: #fff;
+    color: #171717;
+}
+
+.blog-card__content span {
+    font-size: 13px;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 10px;
+}
+
+.blog-card__link {
+    font-size: 20px;
+    line-height: 28px;
+    color: #fff;
+}
+
+.bottom-text {
+    padding: 80px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 35px;
+}
+
+.bottom-text a {
+    color: #CEE002;
+    border-bottom: 1px solid #cee002;
+}
+
+@media only screen and (max-width:992px) {
+    .blog-card {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px
+    }
+}
 
 @media only screen and (max-width:768px) {
     .blog-text {
         left: 30%;
     }
+
+    .blog-card {
+        grid-template-columns: 1fr;
+    }
+
+    .bottom-text {
+        font-size: 20px;
+    }
+}
+
+.footer {
+    padding: 65px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #FFFFFF1A;
 }
