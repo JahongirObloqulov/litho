@@ -1021,12 +1021,13 @@ label #close {
 .map {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     column-gap: 40px;
 }
 
 .map span {
     font-family: 'Poppins', sans-serif;
-    font-size: 200px;
+    font-size: 170px;
     font-weight: 600;
     line-height: 200px;
     letter-spacing: -10px;
@@ -1039,7 +1040,7 @@ label #close {
 }
 
 .map-info {
-    padding: 40px 105px;
+    padding: 40px 90px;
 }
 
 .map-info__title {
@@ -1070,6 +1071,7 @@ label #close {
     color: rgb(147, 147, 147, 0.7);
     border-bottom: 2px solid rgb(147, 147, 147, 0.7);
 }
+
 
 @media only screen and (max-width:992px) {
     #map-section {
@@ -1147,6 +1149,7 @@ label #close {
 
 .blog-card__item img {
     width: 100%;
+    height: 100%;
     transition: 0.5s;
     background: linear-gradient(to bottom rgb(0, 0, 0, 0.8));
 }
