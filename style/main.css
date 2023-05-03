@@ -1331,6 +1331,10 @@ label #close {
     letter-spacing: initial;
 }
 
+.scroll-btn i {
+    color: #232323;
+}
+
 .demo-btn {
     width: 150px;
     background: #fff;
